@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7">
+
+    <ImageView
+        android:id="@+id/imageDoor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/door_foreground"
+        android:layout_weight="4"/>
+    <EditText
+        android:id="@+id/edtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Whats the Password?"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/switch_Toast_Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Enter Password, then Knock"
+        android:textStyle="italic"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/send_Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Ding Dong Ditch"
+        android:textStyle="italic"
+        android:layout_weight="1"/>
+
+</LinearLayout>
